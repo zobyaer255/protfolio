@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script>
+    (function () {
+      var t = "dark";
+      try { t = localStorage.getItem("theme") || "dark"; } catch (e) {}
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <title>Abdullah All Zobayer | Python Developer</title>
+  <meta name="description" content="Python developer portfolio: backend, automation, APIs." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top">AZ<span>//OS</span></a>
+
+    <input type="checkbox" id="nav-toggle" hidden />
+    <label for="nav-toggle" class="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Work</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+    </button>
+
+    <div class="status"><i></i> ONLINE</div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">import future</p>
+        <h1>Building intelligent systems with <em>Python</em>.</h1>
+
+        <p class="role-line">
+          <span id="typed-text"></span><span class="typed-cursor"></span>
+        </p>
+
+        <p class="lead">
+          I'm <strong>Abdullah All Zobayer</strong>, a Python-focused builder.
+          Backend, automation, data, APIs. Clean logic. Future-ready code.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#work">view_projects()</a>
+          <a class="btn btn-ghost" href="#contact">ping_me()</a>
+        </div>
+      </div>
+
+      <aside class="terminal" aria-hidden="true">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="term-title">python3 · nexus.py</span>
+        </div>
+        <pre><code><span class="cmt"># boot sequence</span>
+<span class="kw">from</span> pathlib <span class="kw">import</span> Path
+
+<span class="kw">class</span> <span class="cls">Engineer</span>:
+    name = <span class="str">"Abdullah All Zobayer"</span>
+    core = <span class="str">"Python"</span>
+    focus = [<span class="str">"APIs"</span>, <span class="str">"Automation"</span>, <span class="str">"Data"</span>]
+
+    <span class="kw">def</span> <span class="fn">mission</span>(self):
+        <span class="kw">return</span> <span class="str">"Ship useful software."</span>
+
+<span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
+    me = Engineer()
+    print(me.mission())</code></pre>
+      </aside>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span class="scroll-text">scroll</span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <p class="idx">01 // ABOUT</p>
+      <h2>Human behind the interpreter.</h2>
+      <div class="split">
+        <p>
+          <!-- EDIT: write your own bio here (where you study, what you are learning, your goal) -->
+          I'm a Python learner building hands-on programs and strengthening my
+          fundamentals. Next, I'm moving on to OOP, then APIs and automation.
+          My goal is to build useful tools and to start with internships and freelance work.
+        </p>
+        <ul class="facts">
+          <li><span>Name</span> Abdullah All Zobayer</li>
+          <li><span>Core</span> Python 3</li>
+          <li><span>Direction</span> Backend · Automation</li>
+          <li><span>Mode</span> Always compiling</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section reveal">
+      <p class="idx">02 // STACK</p>
+      <h2>The Python universe I'm assembling.</h2>
+      <div class="chips">
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Pandas</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>Linux</span>
+        <span>REST APIs</span>
+        <span>HTML/CSS</span>
+        <span>Automation</span>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section reveal">
+      <p class="idx">03 // WORK</p>
+      <h2>Selected executions.</h2>
+      <div class="cards">
+
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">01</span>
+            <span class="pstatus"><i></i> PLANNED</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="20" x2="4" y2="12"></line>
+              <line x1="10" y1="20" x2="10" y2="6"></line>
+              <line x1="16" y1="20" x2="16" y2="14"></line>
+              <line x1="22" y1="20" x2="22" y2="9"></line>
+            </svg>
+          </div>
+          <h3>Grade Calculator</h3>
+          <p>A CLI tool that takes subject marks, calculates the average, and assigns a grade (A+ to F).</p>
+          <ul class="tech"><li>Python</li><li>CLI</li><li>if / elif</li></ul>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">02</span>
+            <span class="pstatus"><i></i> PLANNED</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          </div>
+          <h3>To-Do App</h3>
+          <p>Terminal-based task manager to add, view and delete tasks, saved to a text file.</p>
+          <ul class="tech"><li>Python</li><li>Functions</li><li>File I/O</li></ul>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <span class="pstatus"><i></i> PLANNED</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h3>Number Guessing Game</h3>
+          <p>Terminal game where the computer picks a number from 1 to 100 and you guess it with hints.</p>
+          <ul class="tech"><li>Python</li><li>random</li><li>while loop</li><li>try / except</li></ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section reveal">
+      <p class="idx">04 // BLOG</p>
+      <h2>Notes from the interpreter.</h2>
+      <div class="cards">
+        <article class="card draft" style="grid-column: 1 / -1;">
+          <p class="tag">log · 000 <span class="badge">COMING SOON</span></p>
+          <h3>First transmission incoming</h3>
+          <p>I'll start writing about my Python learning journey, problems solved, and things built. First post dropping soon.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal">
+      <p class="idx">05 // CONTACT</p>
+      <h2>Let's compile something together.</h2>
+      <p class="lead">Open for internships, freelance, and weird Python experiments.</p>
+      <div class="cta">
+        <!-- EDIT: confirm your email spelling -->
+        <a class="btn btn-primary" href="mailto:zobayer255@gmail.com">zobayer255@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/zobayer255" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Abdullah All Zobayer · compiled with Python energy</p>
+    <p class="tiny">AZ//OS interface</p>
+  </footer>
+
+  <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
