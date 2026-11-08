@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <script>
+    (function () {
+      const t = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+ 
+  <title>Md. Majharul Islam Porbo | Python Developer</title>
+  <meta name="description" content="Futuristic Python developer portfolio — backend, automation, APIs." />
+ 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+ 
+  <header class="nav">
+    <a class="logo" href="#top">PY<span>//OS</span></a>
+ 
+    <input type="checkbox" id="nav-toggle" hidden />
+    <label for="nav-toggle" class="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+ 
+    <nav>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Work</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+ 
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+    </button>
+ 
+    <div class="status"><i></i> ONLINE</div>
+  </header>
+ 
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">import future</p>
+        <h1>Building intelligent systems with <em>Python</em>.</h1>
+ 
+        <p class="role-line">
+          <span id="typed-text"></span><span class="typed-cursor"></span>
+        </p>
+ 
+        <p class="lead">
+          I'm <strong>Md. Majharul Islam Porbo</strong> — a Python-focused builder.
+          Backend, automation, data, APIs. Clean logic. Future-ready code.
+        </p>
+ 
+        <div class="cta">
+          <a class="btn btn-primary" href="#work">view_projects()</a>
+          <a class="btn btn-ghost" href="#contact">ping_me()</a>
+          <a class="btn btn-ghost" href="resume.pdf" download="Md_Majharul_Islam_Porbo_CV.pdf">download_cv() ↓</a>
+        </div>
+      </div>
+ 
+      <aside class="terminal" aria-hidden="true">
+        <div class="term-bar">
+          <span class="dot d-red"></span>
+          <span class="dot d-yellow"></span>
+          <span class="dot d-green"></span>
+          <span class="term-title">python3 · nexus.py</span>
+        </div>
+        <pre><code><span class="cmt"># boot sequence</span>
+<span class="kw">from</span> pathlib <span class="kw">import</span> Path
+ 
+<span class="kw">class</span> <span class="cls">Engineer</span>:
+    name = <span class="str">"Majharul Islam Porbo"</span>
+    core = <span class="str">"Python"</span>
+    focus = [<span class="str">"APIs"</span>, <span class="str">"Automation"</span>, <span class="str">"Data"</span>]
+ 
+    <span class="kw">def</span> <span class="fn">mission</span>(self):
+        <span class="kw">return</span> <span class="str">"Ship useful software."</span>
+ 
+<span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
+    me = Engineer()
+    print(me.mission())</code></pre>
+      </aside>
+ 
+      <!-- Scroll down indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span class="scroll-text">scroll</span>
+      </a>
+    </section>
+ 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section reveal">
+      <p class="idx">01 // ABOUT</p>
+      <h2>Human behind the interpreter.</h2>
+      <div class="split">
+        <p>
+          I'm a 3rd semester Computer Technology student at Dhaka Polytechnic Institute.
+          I'm learning Python by building hands-on programs and strengthening my
+          fundamentals: lists, dictionaries, loops, functions, error handling and
+          basic file handling. Next, I'm moving on to OOP, then APIs and automation.
+          My goal is to build useful tools and to start with internships and freelance work.
+        </p>
+        <ul class="facts">
+          <li><span>Name</span> Md. Majharul Islam Porbo</li>
+          <li><span>Studying</span> Computer Technology, Dhaka Polytechnic</li>
+          <li><span>Core</span> Python 3</li>
+          <li><span>Direction</span> Backend · Automation</li>
+          <li><span>Mode</span> Always compiling</li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- STACK SECTION -->
+    <section id="stack" class="section reveal">
+      <p class="idx">02 // STACK</p>
+      <h2>The Python universe I'm assembling.</h2>
+      <div class="chips">
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Django</span>
+        <span>Flask</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>Linux</span>
+        <span>REST APIs</span>
+        <span>HTML/CSS</span>
+        <span>Automation</span>
+      </div>
+    </section>
+ 
+    <!-- WORK / PROJECTS SECTION -->
+    <section id="work" class="section">
+      <p class="idx reveal">03 // WORK</p>
+      <h2 class="reveal reveal-delay-1">Selected executions.</h2>
+      <div class="carousel reveal reveal-delay-1" id="project-carousel">
+      <div class="carousel-track" id="carousel-track">
+ 
+        <!-- Project 1: Grade Calculator -->
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">01</span>
+            <span class="pstatus live"><i></i> LIVE</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="20" x2="4" y2="12"></line>
+              <line x1="10" y1="20" x2="10" y2="6"></line>
+              <line x1="16" y1="20" x2="16" y2="14"></line>
+              <line x1="22" y1="20" x2="22" y2="9"></line>
+            </svg>
+          </div>
+          <h3>Grade Calculator</h3>
+          <p>A CLI tool that takes subject marks, calculates the average, and assigns a grade (A+ to F) based on performance.</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>CLI</li>
+            <li>if / elif</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/miporbo/python-projects/tree/main/Grade-Calculator" target="_blank" rel="noopener">source →</a>
+            <button class="project-details-btn" type="button" data-project="grade-calculator">view_details()</button>
+          </div>
+        </article>
+ 
+        <!-- Project 2: Quiz Game -->
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">02</span>
+            <span class="pstatus live"><i></i> LIVE</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <h3>Quiz Game</h3>
+          <p>Interactive terminal quiz with multiple questions, live score tracking, and a play-again option.</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>Dictionary</li>
+            <li>Loops</li>
+            <li>Functions</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/miporbo/python-projects/tree/main/Quiz%20Game" target="_blank" rel="noopener">source →</a>
+            <button class="project-details-btn" type="button" data-project="quiz-game">view_details()</button>
+          </div>
+        </article>
+ 
+        <!-- Project 3: To-Do App -->
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <span class="pstatus live"><i></i> LIVE</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          </div>
+          <h3>To-Do App</h3>
+          <p>Terminal-based task manager to add, view and delete tasks, with tasks saved to a text file.</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>Functions</li>
+            <li>File I/O</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/miporbo/python-projects/tree/main/TO%20DO%20APP" target="_blank" rel="noopener">source →</a>
+            <button class="project-details-btn" type="button" data-project="todo-app">view_details()</button>
+          </div>
+        </article>
+ 
+        <!-- Project 4: Number Guessing Game -->
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">04</span>
+            <span class="pstatus live"><i></i> LIVE</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h3>Number Guessing Game</h3>
+          <p>Terminal game where the computer picks a number from 1 to 100 and you guess it with higher or lower hints.</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>random</li>
+            <li>while loop</li>
+            <li>try / except</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/miporbo/python-projects/tree/main/Number-Guessing-Game" target="_blank" rel="noopener">source →</a>
+            <button class="project-details-btn" type="button" data-project="number-guessing-game">view_details()</button>
+          </div>
+        </article>
+ 
+        <!-- Project 5: Password Generator -->
+        <article class="card project">
+          <div class="card-top">
+            <span class="card-num">05</span>
+            <span class="pstatus live"><i></i> LIVE</span>
+          </div>
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3>Password Generator</h3>
+          <p>Generates a random password of any length from letters, digits and symbols, with input validation.</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>random</li>
+            <li>string</li>
+            <li>Functions</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/miporbo/python-projects/tree/main/Password-Generator" target="_blank" rel="noopener">source →</a>
+            <button class="project-details-btn" type="button" data-project="password-generator">view_details()</button>
+          </div>
+        </article>
+ 
+      </div>
+ 
+      <div class="carousel-controls">
+        <p class="carousel-count" id="carousel-count" aria-live="polite">1-3 / 5</p>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="carousel-prev" type="button" aria-label="Previous projects">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="carousel-btn" id="carousel-next" type="button" aria-label="Next projects">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+ 
+    <!-- BLOG SECTION -->
+    <section id="blog" class="section">
+      <p class="idx">04 // BLOG</p>
+      <h2>Notes from the interpreter.</h2>
+      <div class="cards">
+        <article class="card draft" style="grid-column: 1 / -1;">
+          <p class="tag">log · 000 <span class="badge">COMING SOON</span></p>
+          <h3>First transmission incoming</h3>
+          <p>I'll start writing about my Python learning journey, problems solved, and things built — right here. First post dropping soon.</p>
+        </article>
+      </div>
+    </section>
+ 
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact">
+      <p class="idx">05 // CONTACT</p>
+      <h2>Let's compile something together.</h2>
+      <p class="lead">Open for internships, freelance, and weird Python experiments.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:miporbo@gmail.com">miporbo@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/miporbo" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/miporbo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+ 
+  <!-- PROJECT DETAILS POPUP -->
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-modal-close></div>
+ 
+    <section
+      class="project-modal-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project-modal-title"
+      aria-describedby="project-modal-description"
+      tabindex="-1"
+    >
+      <button
+        class="project-modal-close"
+        id="project-modal-close"
+        type="button"
+        aria-label="Close project details"
+      >×</button>
+ 
+      <p class="idx" id="project-modal-kicker">PROJECT DETAILS</p>
+      <h2 id="project-modal-title">Project title</h2>
+      <p id="project-modal-description"></p>
+ 
+      <h3>Features</h3>
+      <ul id="project-modal-features"></ul>
+ 
+      <h3>What I Learned</h3>
+      <ul id="project-modal-learning"></ul>
+ 
+      <h3>Sample Output</h3>
+      <pre class="project-modal-output"><code id="project-modal-sample"></code></pre>
+ 
+      <div class="cta" id="project-modal-links"></div>
+    </section>
+  </div>
+ 
+  <footer>
+    <p>© <span id="y"></span> Md. Majharul Islam Porbo · compiled with Python energy</p>
+    <p class="tiny">PY-OS interface · built by miporbo</p>
+  </footer>
+ 
+  <!-- Back to top button -->
+  <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
